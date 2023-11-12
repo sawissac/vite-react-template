@@ -17,6 +17,7 @@
     "clsx": "^2.0.0",
     "formik": "^2.4.5",
     "formik-validator-zod": "^1.0.2",
+    "framer-motion": "^10.16.4",
     "immer": "^10.0.2",
     "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
