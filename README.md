@@ -61,6 +61,7 @@ Simple `React Template` with useful utility for static site single pages.
 20. `uuid`: Version 9.0.1
 21. `zod`: Version 3.22.4
 22. `zustand`: Version 4.4.1
+23. `framer-motion`: Version 10.16.4
 
 **DevDependencies:**
 
