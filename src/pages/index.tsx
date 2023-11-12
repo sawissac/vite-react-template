@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import HomePage from "./Home";
-import SettingsPage from "./Settings";
+import ErrorPage from "@/layout/error";
 
 const router = createBrowserRouter([
   {
@@ -8,8 +8,8 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "/settings",
-    element: <SettingsPage />,
+    path: "/*",
+    element: <ErrorPage />,
   },
 ]);
 

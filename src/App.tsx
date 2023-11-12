@@ -5,9 +5,7 @@ import { RouterProvider } from "react-router-dom";
 const App = () => {
   return (
     <Layout>
-      <div className="w-full min-h-screen grid place-content-center">
-        <RouterProvider router={router} />
-      </div>
+      <RouterProvider router={router} />
     </Layout>
   );
 };
