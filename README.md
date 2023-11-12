@@ -26,12 +26,12 @@ Simple `React Template` with useful utility for static site single pages.
 
 **Developement**
 ```
-   docker compose -f compose.dev.yaml build --no-cache && docker compose -f compose.dev.yanl up
+   docker compose -f compose.dev.yaml build --no-cache && docker compose -f compose.dev.yaml up
 ```
 
 **Production**
 ```
-   docker compose -f compose.prod.yaml build --no-cache && docker compose -f compose.prod.yanl up
+   docker compose -f compose.prod.yaml build --no-cache && docker compose -f compose.prod.yaml up
 ```
 # Yarn packages
 
