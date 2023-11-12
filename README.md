@@ -22,6 +22,17 @@ Simple `React Template` with useful utility for static site single pages.
       - Custom React hooks, encapsulating logic like constellations, ready to be woven into the fabric of components.
 ```
 
+# Docker Image Build Command
+
+**Developement**
+```
+   docker compose -f compose.dev.yaml build --no-cache && docker compose -f compose.dev.yanl up
+```
+
+**Production**
+```
+   docker compose -f compose.prod.yaml build --no-cache && docker compose -f compose.prod.yanl up
+```
 # Yarn packages
 
 `package.json` file, which contains information about the dependencies and devDependencies of a JavaScript project. Here's a breakdown of some key dependencies and devDependencies:
