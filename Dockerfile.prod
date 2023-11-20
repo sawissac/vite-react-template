@@ -1,27 +1,23 @@
+
+# build image
 FROM node:18-alpine as BUILD_IMAGE
-
 WORKDIR /app
-
 COPY package.json yarn.lock ./
-
 RUN corepack enable
-
 RUN yarn install
-
 COPY . .
-
 RUN yarn build
 
+# production image optimized
 FROM node:18-alpine as PRODUCTION_IMAGE
-
 WORKDIR /app
-
 COPY package.json yarn.lock ./
-
 COPY vite.config.ts .
-
 RUN yarn add typescript
-
 COPY --from=BUILD_IMAGE /app/dist /app/dist
+RUN yarn preview
 
-CMD [ "yarn", "preview" ]
+# run nginx server
+FROM nginx:latest as NGINX_IMAGE
+WORKDIR /
+COPY --from=BUILD_IMAGE /app/dist /usr/share/nginx/html
