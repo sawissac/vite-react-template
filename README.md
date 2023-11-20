@@ -34,9 +34,10 @@ Simple `React Template` with useful utility for static site single pages.
    docker compose -f compose.prod.yaml build --no-cache && docker compose -f compose.prod.yaml up
 ```
 
-**Comming Soon** 
-
- `nginx` server configuration will added soon...
+**Compose Down**
+```
+   docker compose -f compose.prod.yaml down --remove-orphans
+```
 
 # Yarn packages
 
